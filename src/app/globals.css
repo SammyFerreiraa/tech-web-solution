@@ -1,0 +1,26 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+* {
+ margin: 0;
+ padding: 0;
+ box-sizing: border-box;
+}
+
+html ::-webkit-scrollbar {
+  width: 6px;
+}
+
+html ::-webkit-scrollbar-thumb {
+  border-radius: 50px;
+  background: #6b7280;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+img {
+  filter: brightness(0.25);
+}

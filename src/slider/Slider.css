@@ -1,0 +1,30 @@
+.swiper-slide {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 3rem;
+}
+
+.swiper-pagination-bullet-active {
+  background-color: #0284c7;
+}
+
+.swiper-button-prev {
+  color: white;
+  transition-property: color, background-color, border-color,
+    text-decoration-color, fill, stroke;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: 150ms;
+}
+.swiper-button-prev:hover {
+  color: #0284c7;
+}
+.swiper-button-next {
+  transition-property: color, background-color, border-color,
+    text-decoration-color, fill, stroke;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: 150ms;
+  color: white;
+}
+.swiper-button-next:hover {
+  color: #0284c7;
+}
