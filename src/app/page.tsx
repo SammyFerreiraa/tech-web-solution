@@ -1,49 +1,84 @@
 'use client'
 
-import { useEffect } from 'react'
-import AOS from 'aos'
-import 'aos/dist/aos.css'
 import Services from '@/components/Services'
 import TopHome from '@/components/TopHome'
 import Feedbacks from '@/components/Feedbacks'
+import Image from 'next/image'
+import Divisor from '@/components/divisor'
+import Infor from '@/components/Infor'
+import Blog from '@/components/blog/Blog'
 
 export default function Home() {
-  useEffect(() => {
-    AOS.init()
-  })
-
   return (
     <main className="flex flex-col">
       <div className="h-[81px]"></div>
       <TopHome />
-      <div
-        className="flex flex-col items-center justify-center px-2 pb-12 pt-12 xl:pt-0"
-        data-aos="fade-up"
-        data-aos-anchor-placement="center-bottom"
-        data-aos-duration="500"
-      >
-        <h3 className="p-3 pb-12 text-center text-[24px] font-black sm:text-[28px]">
-          ESTRATÉGIA PARA O SUCESSO
-        </h3>
-        <p className="bold max-[50%]: max-w-4xl text-center text-[15px] font-normal sm:text-[17px]">
-          Como empresa fictícia, a TechWeb Solutions é especializada em
-          desenvolvimento web e oferece uma variedade de serviços para ajudar as
-          empresas a estabelecer uma forte presença online. Nossa principal área
-          de atuação é o desenvolvimento front-end, focando em criar sites
-          bonitos, funcionais e responsivos.
-        </p>
-      </div>
-
+      <Infor />
       <Services />
-
-      <div className="relative mb-24 h-24 w-full overflow-hidden">
-        <div className="absolute -left-2 -top-10 z-40 h-3/4 w-[110vw] -rotate-2 bg-sky-950"></div>
-        <div className="absolute -top-2 z-30 h-3/4 w-[110vw] bg-sky-700"></div>
-        <div className="absolute top-1 z-20  h-full w-[110vw] rotate-2 bg-sky-500"></div>
-        <div className="absolute top-[75%] z-10 h-3/4 w-full bg-sky-300"></div>
-      </div>
-
+      <Divisor />
       <Feedbacks />
+      <Divisor />
+      <Blog />
+      <section
+        id="contato"
+        className="flex flex-col gap-10 px-14 pb-24 md:px-28"
+      >
+        <div>
+          <div className="flex flex-row gap-2">
+            <span className="text-5xl font-semibold text-blue-700">Olá!</span>
+            <Image
+              src="/smile.jpg"
+              alt="smile"
+              width={55}
+              height={55}
+              className="brightness-100"
+            />
+          </div>
+          <span className="text-[40px] font-normal text-black">
+            Vamos conversar?
+          </span>
+        </div>
+        <form className="flex w-full flex-col items-center justify-center">
+          <input
+            type="text"
+            name="name"
+            placeholder="Nome"
+            id="name"
+            className="mb-7 h-12 w-full rounded-md border border-blue-500 bg-white px-3 py-2 text-sm placeholder-slate-400 shadow-sm placeholder:font-light
+            placeholder:text-black invalid:border-pink-500 invalid:text-pink-600 focus:border-sky-500
+            focus:outline-none focus:ring-1 focus:ring-sky-900 focus:invalid:border-pink-500
+            focus:invalid:ring-pink-500 disabled:border-slate-200
+            disabled:bg-slate-50 disabled:text-slate-500 disabled:shadow-none md:w-[80%]"
+          />
+          <input
+            type="email"
+            name="email"
+            id="email"
+            placeholder="Email"
+            className='disabled:shadow-none" peer h-12 w-full rounded-md border border-blue-500 bg-white px-3 py-2 text-sm placeholder-slate-400 shadow-sm placeholder:font-light placeholder:text-black invalid:border-pink-500 invalid:text-pink-600 focus:border-sky-500
+            focus:outline-none focus:ring-1 focus:ring-sky-900 focus:invalid:border-pink-500
+            focus:invalid:ring-pink-500 disabled:border-slate-200
+            disabled:bg-slate-50 disabled:text-slate-500 md:w-[80%]'
+          />
+          <p className="invisible my-1 text-sm text-pink-600 peer-invalid:visible">
+            Por favor, forneça um endereço de e-mail válido
+          </p>
+          <input
+            type="text"
+            name="assunto"
+            id="assunto"
+            placeholder="Sobre o que vamos conversar?"
+            className='disabled:shadow-none" mb-7 h-24 w-full rounded-md border border-blue-500 bg-white px-3 py-2 text-sm placeholder-slate-400 
+            shadow-sm placeholder:font-light placeholder:text-black invalid:border-pink-500 invalid:text-pink-600
+            focus:border-sky-500 focus:outline-none focus:ring-1 focus:ring-sky-900 focus:invalid:border-pink-500
+            focus:invalid:ring-pink-500 disabled:border-slate-200
+            disabled:bg-slate-50 disabled:text-slate-500 md:w-[80%]'
+          />
+          <button className="mt-2 w-2/4 rounded bg-sky-700 p-4 font-semibold text-white">
+            Enviar
+          </button>
+        </form>
+      </section>
     </main>
   )
 }

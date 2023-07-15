@@ -4,8 +4,8 @@
   margin-bottom: 3rem;
 }
 
-.swiper-pagination-bullet-active {
-  background-color: #0284c7;
+.swiper-pagination-bullet {
+  margin-top: 3rem;
 }
 
 .swiper-button-prev {

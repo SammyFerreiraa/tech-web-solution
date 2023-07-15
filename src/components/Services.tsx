@@ -2,10 +2,7 @@ import React from 'react'
 import { ItemsService } from './ItemsService'
 
 const Services = () => (
-  <section
-    id="service"
-    className="mb-24 flex flex-col gap-14 px-14 xl:flex-row xl:gap-32"
-  >
+  <section className="mb-24 flex flex-col gap-14 px-14 xl:flex-row xl:gap-32">
     <div className="flex min-w-fit flex-row items-center justify-center gap-4">
       <div className="h-14 w-2 bg-sky-600"></div>
       <p className=" flex-1 border-l-sky-700 text-2xl font-black">

@@ -126,7 +126,10 @@ const TopHome = () => {
               soluções em seu site.
             </span>
           </p>
-          <button className="absolute left-28 top-3/4 rounded bg-sky-600 p-4 pl-6 pr-6 text-3xl font-semibold text-gray-100 transition-colors hover:bg-sky-800">
+          <button
+            id="sobre"
+            className="absolute left-28 top-3/4 rounded bg-sky-600 p-4 pl-6 pr-6 text-3xl font-semibold text-gray-100 transition-colors hover:bg-sky-800"
+          >
             Saiba Mais
           </button>
         </SwiperSlide>

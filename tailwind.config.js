@@ -6,13 +6,11 @@ module.exports = {
     './src/app/**/*.{js,ts,jsx,tsx,mdx}',
   ],
   theme: {
-    extend: {},
-    fontFamily: {
-      sec: '--font-robotoslab',
-      poppins: '--font-poppins',
-    },
-    backgroundImage: {
-      tec: '/psg.jpg',
+    extend: {
+      fontFamily: {
+        sec: 'var(--font-robotoslab)',
+        poppins: 'var(--font-poppins)',
+      },
     },
   },
   plugins: [],
