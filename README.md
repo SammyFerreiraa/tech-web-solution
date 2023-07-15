@@ -19,11 +19,11 @@ O site da TechWeb Solutions foi desenvolvido com o objetivo de representar a emp
 ## 🔎 Preview
 
 <p align="center">
-  <img alt="page" src="./.github/page.png" width="100%">
+  <img alt="page" src="https://files.changemyfile.com/upload/64b2e7ae3bc58_JPG/page.jpg" width="100%">
 </p>
 
 <p align="center">
-  <img alt="page" src="./.github/page-mobile.png" width="100%">
+  <img alt="page" src="https://files.changemyfile.com/upload/64b2e7ae3bc58_JPG/page-mobile.jpg" width="100%">
 </p>
 
 ## 🚀 Tecnologies
