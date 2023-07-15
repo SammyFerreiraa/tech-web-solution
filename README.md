@@ -22,6 +22,9 @@ O site da TechWeb Solutions foi desenvolvido com o objetivo de representar a emp
   <img alt="page" src="./.github/page.png" width="100%">
 </p>
 
+<p align="center">
+  <img alt="page" src="./.github/page-mobile.png" width="100%">
+</p>
 
 ## 🚀 Tecnologies
 
